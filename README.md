@@ -2,4 +2,4 @@ This repo is intented to act as an archive for the older style of texturing in g
 
 Much of the older content has been lost due to a lose of interest and is scattered among various forums, portfolios and websites. This repo intends to combine all this content and host it in a single location.
 
-https://fn23.github.io/OldTextureResources/(https://fn23.github.io/OldTextureResources/)
+https://fn23.github.io/OldTextureResources/
