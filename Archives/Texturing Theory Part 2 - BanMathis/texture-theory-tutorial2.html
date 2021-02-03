@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ben Mathis - Freelance 3D Artist & Tutorials</title>
+    <meta name="description" content="Ben Mathis freelance 3D artist portfolio page and online 3D art tutorial resources for those interested in video game art creation.">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap and Font Awesome css-->
+    <!-- we use cdn but you can also include local files located in css directory-->
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- Google fonts - Montserrat for headings, Cardo for copy-->
+    <link rel="stylesheet" href="gfonts.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="style.default.css" id="theme-stylesheet">
+    <!-- ekko lightbox-->
+    <link rel="stylesheet" href="ekko-lightbox.css">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body data-spy="scroll" data-target="#navigation" data-offset="120">
+	<!-- navbar-->
+	<header class="header">
+		<div class="sticky-wrapper">
+			<div role="navigation" class="navbar navbar-default">
+				<div class="container">
+				<div class="navbar-header">
+					<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-btn btn-sm navbar-toggle">
+						<span class="icon-bar"></span><span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="http://www.poopinmymouth.com/">
+						<img src="logo.png" alt="">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse navbar-right">
+					<ul class="nav navbar-nav">
+						<li><a href="http://www.poopinmymouth.com/resume">About</a></li>
+						<li><a href="http://www.poopinmymouth.com/portfolio">Portfolio</a></li>
+						<li><a href="http://www.poopinmymouth.com/news">News</a></li>
+						<li><a href="http://www.poopinmymouth.com/tutorials" style="border-bottom: solid 1px #666; color: #000;">Tutorials</a></li>                
+						<li><a href="http://www.poopinmymouth.com/contact">Contact</a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</header>	
+    <!-- /.navbar-->
+		
+   <!-- Tutorials-->
+	<section id="tutorials" style="background-color: #eee; padding-top: 60px;">
+		<div class="container">
+			<div class="row tutorials">
+				<div class="col-md-12">
+					<h1 class="heading smallh1">Texturing Theory: Part 2</h1>
+					
+					<p>
+						This tutorial is going to cover texturing. Specifically making your textures look like they have more polygons than they do, and emphasizing the polygons that you do have. To make this easier on myself, I am tackling something small, a samurai armor shoulder pad. Here is my geometry. It is made out of 24 triangles. Very low polygon. However, it should look much more complicated to be visually interesting. So in the texture it will have false geometry by implying it with light. I suggest you read my Texturing Theory Paper before reading this tutorial. <a href="http://www.poopinmymouth.com/tutorials/texture-theory-tutorial1.html" class="bluelink">It can be found here</a>.
+					</p>
+					<p>
+						This tutorial is meant as an example and a follow up to the paper. It is not a How to, it is a detailed explanation of the theories presented in my earlier paper. That is why I do not go into each step and every stage or tool I used.
+					</p>	
+					
+					<div class="row" style="margin-top: 12px;">
+						<div class="col-md-7">
+							<h5>Base Geometry</h5>
+							<p>
+								First, visualize what this fake geometry looks like. For each thing you make, it will be different, so do not use this as a step-by-step, but as a guide to a process. Now since I cannot give you a glance into my head (you would not want to anyway) I modeled the geometry in mind. The armor is made of overlapping plates, with cords tyeing them together. It has a rounded top, and will probably have a design on it somewhere. Already this looks more interesting than the above simple model. Now personally, I prefer painting all in color. One of my favorite artists is Van Gogh, because of his color work. Because of this, I never ever work in greyscale. There are too many color interactions that cannot be had any other way but to get them the first time through. Sometimes it works to hue shift or change the colors later, but those nice color interactions normally survive these changes. So as the volume is being layed out in the texture, it will be in Color. If you like working in greyscale, then by all means, follow along in greyscale.
+							</p>
+						</div>
+						<div class="col-md-5">
+							<a href="ex_01.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="">
+								<img src="ex_01.jpg" style="width: 100%;" />
+							</a>
+						</div>
+					</div>
+					
+					<div class="row" style="margin-top: 12px;">
+						<div class="col-md-7">
+							<h5>Imaginary Geometry</h5>
+							<p>
+								This is something from Harvy Brown's book Secrets every artist should know. Show the typical way a beginner paints textures, and then point out the things that can make it a lot better. I learned particularly well from watching him emphasize his points with a “before” and “after” rather than just look at his nice finished work. 
+							</p>
+							<p>
+								So here is a texture that describes the above geometry at a bare minimum. Black lines are used like a coloring book to denote changes in surface and material. All colors are equal in saturation and value as well. We can sort of tell what it is, but it would not work in a realistic style game. So what all can be done to improve it? Well to start, lets add some real lighting. This is going to be the first pass and will describe the medium scale detail.
+							</p>
+						</div>
+						<div class="col-md-5">
+							<a href="ex_02.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="">
+								<img src="ex_02.jpg" style="width: 100%;" />
+							</a>
+						</div>
+					</div>
+					
+					<div class="row" style="margin-top: 12px;">
+						<div class="col-md-7">
+							<h5>Beginners Mistake</h5>
+							<p>
+								Gone are the black outlines. If you ever take an art class, you will probably hear your teachers say, there are no lines in the real world, only edges. So gone are the black outlines, and now there are clear edges of light and dark. The red was rounded on the top from being a box, to being a cylinder. Using a lighter, less saturated more orange red for the light planes, and a darker, less yellow, more saturated color for the shadow planes. For this example the light source is from above and slightly forward, so take all of the surfaces that face upwards, and paint them as if the light is falling on the high res imaginary geometry. Compare the lighting in this image to the one of the high res geometry. It is round and smooth on the top like the high res version, not blocky like the low. Then on the slats, gone again are the black lines, and now there are edges of shadow where they overlap, and highlighted edges of the plane where it sticks furthest out. This recesses the top, and shoves the bottom of each slat out.
+							</p>
+						</div>
+						<div class="col-md-5">
+							<a href="ex_03.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="">
+								<img src="ex_03.jpg" style="width: 100%;" />
+							</a>
+						</div>
+					</div>
+					
+					<div class="row" style="margin-top: 12px;">
+						<div class="col-md-7">
+							<h5>Initial Lighting</h5>
+							<p>
+								Ok, the medium scale geometry is in, now lets add some smaller scale detail. Its good to separate the different materials. Use some of the slat shadow color around the border of the red to push the slats in and the red out. Use an even darker, near black yellow for the upper corners of each slat. This is because not only is that area shadows by the slats, but it is also being shadowed by the overlapping red, so it should be the darkest area of the slats. By keeping a hierarchy of shadows and lights, you can have a broad range that will describe your false geometry as deeply as you want. The red gives a slightly darker color on the sides, to imply the edge of it curling in. This was right at the border where it changes to yellow. This single pixel line describes the thickness of the red. At the very bottom of the armor, this thin plane is facing up, so it gets the light color. For the grommets and the laces, they were too small to need hand painted shadows, and it would have been hard to get them precisely, so using layer effects drop shadow to give them a nice even single pixel shadow. Then the laces, which were a single pixel line, got a second, darker, single pixel line to describe the width and roundness of the laces. Next came highlights for the top edge where they turn in to insert into the grommet, and shadows for the bottom edge where it turns into that grommet.
+							</p>
+						</div>
+						<div class="col-md-5">
+							<a href="ex_04.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="">
+								<img src="ex_04.jpg" style="width: 100%;" />
+							</a>
+						</div>
+					</div>
+					
+					<div class="row" style="margin-top: 12px;">
+						<div class="col-md-7">
+							<h5>Small scale detail</h5>
+							<p>
+								Now this is an important step. The overlay stage. Using either photos, a new layer you create using textured brushes, or filters, you create the “texture” or grit of the material. Before this stage, we could tell the volume of the different planes, but not the material it was made out of. Only the lighting was in. Now use a leather overlay, and a wood overlay to help describe the different materials. The problem is that everything now looks like it has volume, and we can tell what it is made out of, but there is something else that it needs. Specular. The specular intensity and its fall off, describe the surface just as much, if not more, than the overlay layers. A harsh, sharp specular will read as metal, while a broad diffuse specular will read as plastic or skin. The color of the specular can influence what material it reads as, as well.
+							</p>
+						</div>
+						<div class="col-md-5">
+							<a href="ex_05.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="">
+								<img src="ex_05.jpg" style="width: 100%;" />
+							</a>
+						</div>
+					</div>
+					
+					<div class="row" style="margin-top: 12px;">
+						<div class="col-md-7">
+							<h5>Overlays for Grit</h5>
+							<p>
+								By adding a slightly scattered specular to the leather, it implies the glossiness, and the ridged texture. By adding specular to the metal grommets, and an extra set on the top you can clearly tell their metallic nature. The specular correlates to the light direction and further helps describe the materials. This could technically be considered done. There are a few steps however, that can dramatically improve the quality. The first is a more dynamic design.
+							</p>
+						</div>
+						<div class="col-md-5">
+							<a href="ex_06.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="">
+								<img src="ex_06.jpg" style="width: 100%;" />
+							</a>
+						</div>
+					</div>
+					
+					<div class="row" style="margin-top: 12px;">
+						<div class="col-md-7">
+							<h5>Adding Specular</h5>
+							<p>
+								Adding a pattern to the wood helps a lot. This gives the viewers something to look at right away, a focus point. The rest of the detail is still there, but it is background information for the main event. The dragon is black matte paint or ink, so it has only the barest hint of light hitting it on the edge of the wooden slats, and has a deep shadow under the ledge of the slats. The moon however is a silver leafing, so it has a bit of dark tint to hint at the reflective power, and then has a bright white glint along the edge.
+							</p>
+						</div>
+						<div class="col-md-5">
+							<a href="ex_07.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="">
+								<img src="ex_07.jpg" style="width: 100%;" />
+							</a>
+						</div>
+					</div>
+					
+					<div class="row" style="margin-top: 12px;">
+						<div class="col-md-7">
+							<h5>Add Design Focus</h5>
+							<p>
+								Very subtle difference on this one. Using a layer set to soft light, with black and white brush, you can emphasize the focal point. White will bring attention, and black will push away. A bit of white in the center of the top roll, and a nice area over the dragon ensure it is looked at first, and keeps the other details from fighting for attention. Also a little big of under light was added so the top roll wouldn't be so black underneath. This step is especially helpful with full characters. A bit of light on the face, chest, and shoulders, and a bit of black to push away the arms and lower body, can really lend readability to your texture, and model.
+							</p>
+						</div>
+						<div class="col-md-5">
+							<a href="ex_08.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="">
+								<img src="ex_08.jpg" style="width: 100%;" />
+							</a>
+						</div>
+					</div>
+					
+					<div class="row" style="margin-top: 12px;">
+						<div class="col-md-7">
+							<h5>Add Unified Lighting for Focus</h5>
+							<p>
+								The final step is to add some wear and tear. Unless it is for a very stylized game, most things look more realistic with some scratches or five. Little bit of grunge, discoloration, chunks taken out, etc will go a long way to making the texture more realistic. Marbleized overlays, that have large areas of dark colors, separated by lighter colors work well on overlay soft light and multiply layers. 
+							</p>
+						</div>
+						<div class="col-md-5">
+							<a href="ex_10.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="">
+								<img src="ex_10.jpg" style="width: 100%;" />
+							</a>
+						</div>
+					</div>
+					
+					<div class="row" style="margin-top: 12px;">
+						<div class="col-md-12">
+							<h5>Dirt, Scratches, and Wear</h5>							
+							<div class="row" style="margin-top: 12px;">
+								<div class="col-md-4">
+									<a href="ex_12.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="">
+										<img src="ex_12.jpg" style="width: 100%;" />
+									</a>					
+								</div>
+								<div class="col-md-3">
+									<a href="ex_13.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="">
+										<img src="ex_13.jpg" style="width: 100%;" />
+									</a>
+								</div>
+								<div class="col-md-5">
+									<a href="ex_11.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="">
+										<img src="ex_11.jpg" style="width: 100%;" />
+									</a>
+								</div>
+							</div>
+						</div>						
+					</div>
+					
+					<a href="http://www.poopinmymouth.com/tutorials/texture-theory-tutorial1.html" class="bluelink">Back to part 1</a>					
+					
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- tutorials end-->
+    	
+    <footer style="background-color: #111;" class="section-inverse">
+      <div class="container"> 
+        <div class="row copyright">
+          <div class="col-md-6">
+            <p>&copy;2016 Ben Mathis</p>
+          </div>
+          <div class="col-md-6">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://www.poopinmymouth.com/tutorials/js/jquery-1.11.0.min.js"><\/script>')</script>
+    <!-- Bootstrap CDN-->
+    <script src="bootstrap.min.js"></script>
+    <!-- jQuery Cookie - For Demo Purpose-->
+    <script src="jquery.cookie.js"></script>
+    <!-- Lightbox-->
+    <script src="ekko-lightbox.js"> </script>
+    <!-- Sticky + Scroll To scripts for navbar-->
+    <script src="jquery.sticky.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <!-- main script-->
+    <script src="front.js"></script>
+	<script src="jquery.fitvids.js"></script>
+	<script>
+		$(document).ready(function(){		
+			if(screen.width < 853) {
+				$("#videocontainer").fitVids();
+			}
+		});
+	</script>
+	<script src="analytics.js"></script>
+  </body>
+</html>

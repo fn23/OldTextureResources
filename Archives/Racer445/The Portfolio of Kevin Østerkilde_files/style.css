@@ -1,0 +1,539 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* --------------------------------
+   General
+----------------------------------- */
+
+html {
+	font-size: 62.5%; /* reset 1em to 10px */
+	overflow-y: scroll;
+}
+
+body {
+	background: #0e0e0e url(/web/20160314153952im_/http://oesterkilde.dk/img/background.jpg) top center repeat-x; margin-top:0px;
+	color: #000000;
+	font: normal 14px Arial,Verdana,sans-serif;
+	padding-top: 64px;
+}
+
+small,.small {
+	font-size: 0.9em;
+}
+
+#main {
+	color: #6A7378;
+}
+
+a {
+	color: #FFB923;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFB923;
+	text-decoration: underline;
+}
+
+p {padding: 0.2em 0 1.2em;}
+
+blockquote, code {
+	background: #4A4A4A;
+	border: 1px solid #333;
+	color: #BBB;
+	display: block;
+	margin-bottom: 12px;
+}
+code {
+	font: normal 0.9em Verdana,sans-serif;
+	line-height: 1.5em;
+	padding: 8px 14px;
+}
+blockquote {
+	background: #4A4A4A url('/web/20160314153952im_/http://oesterkilde.dk/img/quote.gif') no-repeat left;
+	padding: 6px 14px 6px 31px;
+}
+blockquote p {padding: 0.5em 0;}
+
+/* --------------------------------
+   Headings, titles
+----------------------------------- */
+
+h1 {font: normal 3em League Gothic; color: #BBB;}
+h2 {font: normal 1.6em League Gothic;}
+h3 {font: normal 1.4em League Gothic;}
+h4 {font: bold 1em League Gothic;}
+
+h1, h2, h3, h4 {margin-bottom: -15px;}
+
+/* --------------------------------
+   Main layout
+----------------------------------- */
+
+#layout_wrapper {
+	background: #transparent;
+	margin: 0 auto;
+	width: 940px;
+}
+#layout_post {
+	background: #171717;
+	margin: 0 auto;
+	width: 940px;
+}
+#layout_resume {
+	background: #171717;
+	margin-top: 35px;
+	width: 740px;
+	padding: 16px 100px 16px;
+}
+#layout_container {padding: 8px;}
+#layout_content {border: 0px solid #333;}
+
+#header_image {
+	height: 48px;
+	margin-top:-64px;
+	background: #282828;
+	border-bottom: 4px solid #FFB923;
+}
+
+/* --------------------------------
+   Site title
+----------------------------------- */
+
+#site_title {
+	background: #222;
+	padding: 12px 20px;
+}
+#site_title h1 	{
+	color: #EED;
+	font: normal 2em Georgia,sans-serif;
+	margin: 0 0 5px;
+}
+#site_title h2 {
+	color: #BFBFB6;
+	font: normal 1.1em sans-serif;
+	margin: 0;
+}
+
+/* --------------------------------
+   Navigation
+----------------------------------- */
+
+.navigation {
+	background: #transparent;
+	margin-top: -18px;
+}
+.navigation ul {display: inline; margin: 0 auto;}
+.navigation ul li {
+	margin-left: -29px;
+	float: left;
+	list-style: none;
+}
+.navigation a {
+	color: #FFFFFF;
+	display: block;
+	font: bold 1em Verdana,sans-serif;
+	padding: 12px 14px;
+	text-decoration: none;
+}
+.navigation a:hover {
+	background: #transparent;
+	color: #000000;
+	text-decoration: none;
+}
+
+#subnav a {
+	margin-top:58px;
+	background: #transparent url(/web/20160314153952im_/http://oesterkilde.dk/img/subnav.jpg);
+}
+
+#navig {
+	background: #transparent;
+	margin-top: -65px;
+	font: normal 1em Arial,Verdana,sans-serif;
+	text-decoration: none;
+	padding: 10px;
+	height: 45px;
+}
+
+/* --------------------------------
+   Bottom
+----------------------------------- */
+
+#bottom {
+	background: #transparent top center;
+	color: #AAA;
+	padding: 16px;
+}
+#bottom ul li {
+	border-bottom: 0px solid #303030;
+}
+#bottom ul li a {
+	color: #transparent;
+	display: block;
+	padding: 6px 6px;
+}
+#bottom ul li a:hover {
+	background: #transparent;
+	color: #FFC;
+	text-decoration: none;
+}
+
+/* Tag cloud */
+#tag_cloud a {color: #777;}
+#tag_cloud a:hover {color: #FFC;}
+
+
+
+/* --------------------------------
+   Footer
+----------------------------------- */
+
+.footer {
+	background: #transparent;
+	color: #727272;
+}
+.footer ul {display: inline; margin: 0 auto;}
+.footer ul li {
+	margin-left: -29px;
+	float: left;
+	list-style: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.footer a {
+	color: #FFFFFF;
+	display: block;
+	font: bold 1em Verdana,sans-serif;
+	padding: 0px 14px;
+	text-decoration: none;
+}
+.footer a:hover {
+	background: #transparent;
+	color: #000000;
+	text-decoration: none;
+}
+
+#footer {
+	background: #transparent;
+	margin-left: 46px;
+	font: normal 1em Arial,Verdana,sans-serif;
+	text-decoration: none;
+	height: 40px;
+}
+
+/* --------------------------------
+   Floats
+----------------------------------- */
+
+.left {float: left;}
+.center {float: center;}
+.right {float: right;}
+.clear,.clearer {clear: both;}
+.clearer,.block {
+	display: block;
+	line-height: 0;
+	font-size: 0;
+}
+.clearer {height: 0;}
+
+/* --------------------------------
+   Misc
+----------------------------------- */
+
+/* Columns */
+.col3 {width: 31%; margin-right: 3%;}
+.col3last {width: 940px; margin-top: -6px;}
+
+.cols {width: 250px; margin-right:0%; margin-top: 10px;}
+
+.folio {width: 25%; margin-right:650px; margin-top:0px;}
+
+/* Text */
+.tleft {text-align: left;}
+.tcenter {text-align: center;}
+.tright {text-align: right;}
+.vtop {vertical-align: top;}
+
+/* --------------------------------
+   Posts
+----------------------------------- */
+
+@font-face {
+	font-family: 'League Gothic';
+	src: url('/web/20160314153952im_/http://oesterkilde.dk/league_ghotic_extended-webfont.eot') format('eot'),
+        url('/web/20160314153952im_/http://oesterkilde.dk/league_ghotic_extended-webfont.woff') format('woff'),
+        url('/web/20160314153952im_/http://oesterkilde.dk/league_ghotic_extended-webfont.ttf') format('truetype'),
+        url('/web/20160314153952im_/http://oesterkilde.dk/league_ghotic_extended-webfont.svg#webfontJks7As9d') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.post {
+	background: #171717;
+	margin: 0 auto;
+	width: 540px;
+}
+.post_index {
+	background: #transparent;
+	margin: 0 auto;
+	margin_top: 16px;
+	width: 940px;
+}
+.post_title h2 {
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+}
+.post_body {
+	background: #171717;
+	width: 508px;
+	padding: 16px 16px 16px;
+}
+.post_metadata {padding: 10px;}
+.post_metadata .content {
+	background: #424242;
+	color: #999;
+	font-size: 0.9em;
+	padding: 10px 12px;
+}
+.post_metadata a {color: #BBB;}
+.post_metadata a:hover {color: #DDD;}
+
+.post_body ul, .post_body ol {margin: 0 0 1em 1.5em;}
+.post_body ul {list-style: disc;}
+.post_body ol {list-style: decimal;}
+
+::-moz-selection {
+       background-color: #FFB923;
+       color: #060000;
+}
+::selection {
+       background-color: #FFB923;
+       color: #060000;
+}
+
+#portfolio {
+	background: #171717;
+}
+#portfolio_index {
+	background: #transparent;
+}
+#portfolio_index:hover {
+	color: #FFB923;
+}
+
+/* ----------------------------------------
+  Pictures
+------------------------------------------- */
+
+.overkill {
+	width: 940px;
+	height: 200px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/portfolio/overkill_thumb.jpg) top;
+	text-indent: -9999px;
+}
+.overkill:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/portfolio/overkill_thumb.jpg) bottom;
+}
+.rpg7 {
+	width: 940px;
+	height: 200px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/portfolio/rpg_thumb.jpg) top;
+	text-indent: -9999px;
+}
+.rpg7:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/portfolio/rpg_thumb.jpg) bottom;
+}
+.remington {
+	width: 940px;
+	height: 200px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/portfolio/remington_thumb.jpg) top;
+	text-indent: -9999px;
+}
+.remington:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/portfolio/remington_thumb.jpg) bottom;
+}
+.knife {
+	width: 940px;
+	height: 200px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/portfolio/knife_thumb.jpg) top;
+	text-indent: -9999px;
+}
+.knife:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/portfolio/knife_thumb.jpg) bottom;
+}
+.misc {
+	width: 940px;
+	height: 200px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/portfolio/misc_thumb.jpg) top;
+	text-indent: -9999px;
+}
+.misc:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/portfolio/misc_thumb.jpg) bottom;
+}
+.m720 {
+	width: 940px;
+	height: 200px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/portfolio/m720_thumb.jpg) top;
+	text-indent: -9999px;
+}
+.m720:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/portfolio/m720_thumb.jpg) bottom;
+}
+
+#bio {
+	margin-bottom: -35px;
+}
+
+/* ----------------------------------------
+  Social icons
+------------------------------------------- */
+
+.gmail {
+	width: 46px;
+	height: 43px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/social.png) 0px 0px; 
+	text-indent: -9999px;
+}
+.gmail:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/social.png) 0px 43px;
+}
+.linkedin {
+	width: 46px;
+	height: 43px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/social.png) -46px 0px;
+	text-indent: -9999px;
+}
+.linkedin:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/social.png) -46px 43px;
+}
+.plus {
+	width: 46px;
+	height: 43px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/social.png) -92px 0px;
+	text-indent: -9999px;
+}
+.plus:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/social.png) -92px 43px;
+}
+.twitter {
+	width: 46px;
+	height: 43px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/social.png) -138px 0px;
+	text-indent: -9999px;
+}
+.twitter:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/social.png) -138px 43px;
+}
+.dribbble {
+	width: 46px;
+	height: 43px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/social.png) -184px 0px;
+	text-indent: -9999px;
+}
+.dribbble:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/social.png) -184px 43px;
+}
+.polycount {
+	width: 46px;
+	height: 43px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/social.png) -230px 0px;
+	text-indent: -9999px;
+}
+.polycount:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/social.png) -230px 43px;
+}
+.pdf {
+	width: 46px;
+	height: 43px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/social.png) -276px 0px;
+	text-indent: -9999px;
+}
+.pdf:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/social.png) -276px 43px;
+}
+.title {
+	width: 156px;
+	height: 43px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/kevin_oesterkilde.png) 0px 0px;
+	text-indent: -9999px;
+}
+.title:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/kevin_oesterkilde.png) 0px 43px;
+}
+.resume {
+	width: 96px;
+	height: 32px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/resume.png) 0px 0px;
+	text-indent: -9999px;
+}
+.resume:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/resume.png) 0px 32px;
+}
+.return {
+	width: 96px;
+	height: 32px;
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/back.png) 0px 0px;
+	text-indent: -9999px;
+}
+.return:hover {
+	background: url(/web/20160314153952im_/http://oesterkilde.dk/img/back.png) 0px 32px;
+}
+
+/* ----------------------------------------
+  Stats
+------------------------------------------- */
+
+.skills { 
+	width: 50%;
+  margin: 0 auto;
+  padding:0;
+}
+
+.skills p { 
+	margin-bottom: 20px; 
+}
+
+ul.skillset {
+	float: left;
+	width: 100%;
+	list-style: none;
+}
+
+.skill-percent { 
+	float: right; 
+}
+
+li.skill-bar {
+	background-color: #7BC673;
+	color: #FFF;
+	font: bold 12px/23px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-bottom: 3px;
+	padding: 2px 8px;
+	width: 300px;
+	list-style: none;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;       
+}
+/*
+     FILE ARCHIVED ON 15:39:52 Mar 14, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:44:54 Dec 29, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 325.738
+  PetaboxLoader3.resolve: 107.695 (2)
+  LoadShardBlock: 286.901 (3)
+  load_resource: 11553.83 (2)
+  PetaboxLoader3.datanode: 11701.706 (5)
+  exclusion.robots: 0.343
+  esindex: 0.02
+  CDXLines.iter: 31.0 (3)
+  exclusion.robots.policy: 0.323
+  RedisCDXSource: 2.847
+*/

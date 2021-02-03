@@ -1,0 +1,99 @@
+/* your styles go here */
+@media screen and (min-width: 800px) {
+    .news-image {
+		width: 100%;
+	}
+	
+	.small-h1-on-mobile {		
+		font-size: 36pt !important;
+	}
+	
+	.small-icon-on-mobile {
+		font-size: 32pt !important;
+	}
+	
+	.no-margin-top-on-mobile {
+		font-size: 40px !important;
+	}
+	
+	.no-margin-on-mobile {
+		margin-top: 20px !important;
+		margin-bottom: 30px !important;
+	}
+	
+	.threethree-on-desktop {
+		width: 33% !important;
+	}
+	
+	.fivezero-on-desktop {
+		width: 50% !important;
+	}
+	
+	.sevenzero-on-desktop {
+		width: 70% !important;
+	}
+}
+
+.threethree-on-desktop {
+	width: 100%;
+}
+
+.fivezero-on-desktop {
+	width: 100%;
+}
+
+.sevenzero-on-desktop {
+	width: 100%;
+}
+
+.news-image {
+	margin-bottom: 20px;
+}
+
+.small-h1-on-mobile {
+	font-size: 18pt;
+}
+
+.small-icon-on-mobile {
+	font-size: 22pt;
+}
+
+.no-margin-top-on-mobile {
+	font-size: 0px;
+}	
+
+.no-margin-on-mobile {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.fancylink {
+	color: #337ab7;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.bluelink {
+	color: #337ab7;
+}
+
+.news-hr {
+	margin-top: 80px; 
+	margin-bottom: 80px;
+	border-color: #555;
+}
+
+.tutorial-hr {
+	margin-top: 30px; 
+	margin-bottom: 30px;
+	border-color: #555;
+}
+
+.shadedrow {
+	background: #ccc; 
+	padding: 10px;
+}
+
+.smallh1 {
+    font-size: 36px;
+}
+	
